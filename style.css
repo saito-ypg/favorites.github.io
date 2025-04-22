@@ -49,6 +49,7 @@ iframe {
 	border-radius: 12px;
 	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
+
 main {
 	box-sizing: border-box;
 	margin-top: 363px;
@@ -168,16 +169,19 @@ h2 {
 	aspect-ratio: 1/1;
 
 	padding: 10px;
-	background-color: white;
+	background-color: #fffc;
 	border-radius: 100px;
 
 	text-decoration: none;
 	color: #333;
 	font-size: smaller;
+
+	border: #333 1px solid;
 }
 .return-to-top img {
 	width: 50px;
 	height: 50px;
+	box-shadow: none;
 }
 
 footer {
