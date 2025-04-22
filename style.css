@@ -34,6 +34,7 @@ header {
 	display: flex;
 	justify-content: left;
 	align-items: center; /* これで上下の中央に寄る */
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.35);
 }
 header div {
 	background-color: #ffffffd2;
@@ -43,13 +44,18 @@ header div {
 	margin-left: 10rem;
 	z-index: -1;
 }
-
+img,
+iframe {
+	border-radius: 12px;
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
 main {
 	box-sizing: border-box;
 	margin-top: 363px;
 	padding: 2rem 8%;
 
 	background-color: #f8f8ff;
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.35);
 }
 .mokuji {
 	width: fit-content;
@@ -133,6 +139,7 @@ h2 {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+
 	gap: 1rem;
 	margin: 1.5rem 0;
 }
@@ -176,6 +183,7 @@ h2 {
 footer {
 	padding: 1rem 8%;
 	background-color: #dbdbe0;
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.35);
 }
 
 @media (max-width: 768px) {
