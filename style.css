@@ -1,0 +1,211 @@
+.font_orbitron-a {
+	font-family: "Orbitron", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: normal;
+	font-style: normal;
+}
+.font_zen-maru {
+	font-family: "Zen Maru Gothic", serif;
+	font-weight: 500;
+	font-style: normal;
+}
+
+html {
+	scroll-behavior: smooth;
+	min-height: 100%;
+	height: 100%;
+}
+
+body {
+	background-color: #d3ffa7;
+	max-width: 1280px;
+	width: 100%;
+	margin: auto;
+}
+header {
+	position: fixed;
+	top: 0px;
+	z-index: -2;
+
+	background-image: url("img/mountain-5431950_1280.webp");
+	height: 363px;
+	max-width: 1280px;
+	width: 100%;
+	display: flex;
+	justify-content: left;
+	align-items: center; /* これで上下の中央に寄る */
+}
+header div {
+	background-color: #ffffffd2;
+	border-radius: 12px;
+	width: fit-content;
+	padding: 1rem;
+	margin-left: 10rem;
+	z-index: -1;
+}
+
+main {
+	box-sizing: border-box;
+	margin-top: 363px;
+	padding: 2rem 8%;
+
+	background-color: #f8f8ff;
+}
+.mokuji {
+	width: fit-content;
+	padding-right: 1rem;
+	background-color: #a2f3517c;
+	border: 1px solid #3b4e32;
+}
+.mokuji a {
+	text-decoration: none;
+	font-weight: bold;
+	color: #333;
+}
+.mokuji p {
+	margin: 1rem 0 0 1rem;
+}
+.genre {
+	margin: 1rem 1rem 5rem 0;
+}
+h2 {
+	font-size: xx-large;
+	margin: 1rem 0 0.4rem 0;
+	padding: 1rem;
+	background-color: #99f19e;
+	border: dashed 2px #3b4e32;
+	position: sticky;
+	top: 0px;
+	z-index: 2;
+}
+
+.favo-div {
+	padding: 1rem 0;
+	margin-bottom: 2rem;
+}
+.favo-div h3 {
+	font-size: x-large;
+	font-weight: bolder;
+}
+.title {
+	background-color: #ff7675;
+	width: fit-content;
+	position: sticky;
+	top: 5rem;
+	z-index: 1;
+	padding: 0.5rem 1rem;
+}
+
+.catchcopy {
+	padding: 0.5rem;
+	margin: 1rem 0;
+	border-left: solid 2px black;
+	font-size: medium;
+	font-weight: bolder;
+	font-style: italic;
+	width: fit-content;
+}
+.store-flex {
+	display: flex;
+	align-items: center;
+}
+.store-flex p {
+	justify-self: left;
+}
+.img-flex {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1rem;
+	margin: 1.5rem 0;
+}
+
+.img-flex a {
+	color: inherit;
+	max-width: 50%;
+}
+.img-flex img {
+	align-items: center;
+	height: auto;
+	width: 100%;
+}
+.map-flex {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1rem;
+	margin: 1.5rem 0;
+}
+.map-flex iframe,
+.map-flex img {
+	align-items: center;
+	max-width: 50%;
+}
+.map-flex img {
+	height: auto;
+}
+
+.return-to-top {
+	box-sizing: border-box;
+	position: fixed;
+	bottom: 10%;
+	right: 10%;
+	z-index: 3;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	height: 60px;
+	width: 60px;
+	aspect-ratio: 1/1;
+
+	padding: 10px;
+	background-color: white;
+	border-radius: 100px;
+
+	text-decoration: none;
+	color: #333;
+	font-size: smaller;
+}
+.return-to-top img {
+	width: 50px;
+	height: 50px;
+}
+
+footer {
+	padding: 1rem 8%;
+	background-color: #dbdbe0;
+}
+
+@media (max-width: 768px) {
+	.img-flex,
+	.map-flex,
+	.store-flex {
+		flex-direction: column;
+		align-items: stretch;
+	}
+
+	.img-flex a,
+	.map-flex iframe,
+	.map-flex img {
+		max-width: 100%;
+	}
+
+	iframe {
+		width: 100% !important;
+		height: auto;
+	}
+
+	main {
+		padding: 1rem 5%;
+	}
+
+	footer {
+		padding: 1rem 5%;
+	}
+	.mokuji {
+		max-width: 100%;
+		overflow-wrap: break-word;
+	}
+}
